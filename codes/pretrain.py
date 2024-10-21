@@ -56,10 +56,7 @@ if __name__ == '__main__':
     
     # Load dataset
     if args.dataset == "zinc":
-        data = pd.read_csv("data/zinc/x000.csv")
-        for i in range(1, 10):
-            data1 = pd.read_csv(f'data/zinc/x00{i}.csv')
-            data = pd.concat([data, data1], axis=0)
+        data = pd.read_csv("/workspace/250k_rndm_zinc_drugs_clean_3.csv")
         data = data['smiles']
     elif args.dataset == "chembl":
         data = []
