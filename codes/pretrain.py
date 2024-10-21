@@ -11,7 +11,7 @@ from torch.utils.tensorboard import SummaryWriter
 from vocabulary import SMILESTokenizer, read_vocabulary, create_vocabulary
 from dataset import Dataset
 from model import GPT, GPTConfig
-from model_rnn import RNN
+#from model_rnn import RNN
 from utils import model_validity, set_seed
 
 
